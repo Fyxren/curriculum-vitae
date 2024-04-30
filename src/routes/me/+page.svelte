@@ -1,7 +1,9 @@
 <script>
-	import Header from "$lib/components/elements/Header.svelte";
-
+	import Education from '$lib/components/elements/Education.svelte';
+	import Header from '$lib/components/elements/Header.svelte';
 </script>
+
 <div>
-    <Header />
+	<Header />
+	<Education />
 </div>
