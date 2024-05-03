@@ -16,7 +16,9 @@
 						{#if ex.end}
 							- {ex.end}
 						{/if}) •
-						{ex.company}
+						<a href={ex.link} target="_blank" class="hover-link">
+							{ex.company}
+						</a>
 					</Card.Description>
 				</Card.Header>
 				<Card.Content>
