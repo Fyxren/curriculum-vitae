@@ -19,7 +19,8 @@ export interface Project {
 export interface Experience {
     title: string;
     company: string;
-    type: 'part-time' | 'full-time';
+    link?: string;
+    type: 'Part-time' | 'Full-time' | 'Internship';
     start: string;
     end?: string;
 }
