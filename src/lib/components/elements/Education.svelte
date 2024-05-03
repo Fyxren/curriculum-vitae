@@ -1,6 +1,7 @@
 <script>
 	import education from '$lib/data/education';
 	import * as Card from '$lib/components/ui/card';
+	import { Badge } from '../ui/badge';
 </script>
 
 <div class="px-5 xl:px-40">
@@ -19,7 +20,7 @@
 					</Card.Description>
 				</Card.Header>
 				<Card.Content>
-					{edu.note}
+					<Badge>{edu.note}</Badge>
 				</Card.Content>
 			</Card.Root>
 		{/each}
