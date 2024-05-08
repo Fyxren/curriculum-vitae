@@ -1,0 +1,27 @@
+<script lang="ts">
+	import { Separator } from '$lib/components/ui/separator';
+	import links from '$lib/data/links';
+	import { Button } from '$lib/components/ui/button';
+</script>
+
+<div class="flex flex-col items-center space-y-8">
+	<Separator />
+	<div class="flex justify-center w-full gap-12">
+		{#each links as link}
+			<a
+				href={link.link}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="p-2 duration-200 rounded-lg hover:bg-muted hover:rotate-6"
+			>
+				<img
+					src={`/icons/${link.icon}.svg`}
+					alt={link.name}
+					class="object-contain w-10"
+				/>
+			</a>
+		{/each}
+	</div>
+	<p class="text-muted-foreground">This is my resume. Rather go to my personal page?</p>
+	<Button href="https://fyxren.com" class="" variant="outline">Go to Fyxren.com</Button>
+</div>

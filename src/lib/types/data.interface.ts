@@ -12,7 +12,7 @@ export interface Project {
     description: string;
     stack: string[];
     image: string;
-    links: Link[];
+    links: ProjectLink[];
 
 }
 
@@ -31,7 +31,9 @@ export interface Skills {
     software: SoftwareSkill[];
 }
 
-interface Link {
+export type Links = SocialLink[];
+
+interface ProjectLink {
     title: string;
     link: string;
 }
@@ -52,4 +54,10 @@ interface SoftwareSkill {
     name: string;
     icon: string;
     beginner: boolean;
+}
+
+interface SocialLink {
+    name: string;
+    link: string;
+    icon: string;
 }
