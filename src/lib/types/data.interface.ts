@@ -25,7 +25,31 @@ export interface Experience {
     end?: string;
 }
 
+export interface Skills {
+    languages: LanguageSkill[];
+    dev: DevSkill[];
+    software: SoftwareSkill[];
+}
+
 interface Link {
     title: string;
     link: string;
+}
+
+interface LanguageSkill {
+    name: string;
+    countryCode: string;
+    level: string;
+}
+
+interface DevSkill {
+    name: string;
+    icon: string;
+    beginner: boolean;
+}
+
+interface SoftwareSkill {
+    name: string;
+    icon: string;
+    beginner: boolean;
 }
