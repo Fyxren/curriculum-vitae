@@ -5,12 +5,13 @@ export default {
         {
             name: 'Dutch',
             countryCode: 'nl',
-            level: 'Native'
+            level: 'Native',
         },
         {
             name: 'English',
             countryCode: 'gb',
-            level: 'B2/C1'
+            level: 'B2 & C2',
+            link: 'https://cert.efset.org/CdpSMN'
         },
         {
             name: 'German',

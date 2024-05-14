@@ -3,7 +3,9 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
 	import * as HoverCard from '$lib/components/ui/hover-card';
-	import { Info } from 'lucide-svelte';
+	import * as Tooltip from '$lib/components/ui/tooltip';
+	import { Button } from '$lib/components/ui/button';
+	import { ExternalLink, Info } from 'lucide-svelte';
 </script>
 
 <div class="px-5 xl:px-40">
@@ -15,19 +17,41 @@
 				<Card.Title>Languages</Card.Title>
 				<Card.Description>What languages do I speak?</Card.Description>
 			</Card.Header>
-			<Card.Content class="space-y-4">
+			<Card.Content class="space-y-2">
 				{#each skills.languages as skill}
-					<div class="flex items-center gap-2">
-						<img
-							src={`https://flagcdn.com/${skill.countryCode}.svg`}
-							alt={skill.name}
-							class="object-contain w-12 rounded-sm"
-						/>
-						{skill.name}
+					<div class="flex items-center justify-between">
+						<div class="flex items-center gap-2">
+							<img
+								src={`https://flagcdn.com/${skill.countryCode}.svg`}
+								alt={skill.name}
+								class="object-contain w-12 rounded-sm"
+							/>
+							{skill.name}
+							{#if skill.link}
+								<Tooltip.Root>
+									<Tooltip.Trigger asChild let:builder>
+										<Button
+											builders={[builder]}
+											variant="ghost"
+											class="-ml-2 scale-75"
+											href={skill.link}
+											target="_blank"
+										>
+											<ExternalLink class="text-muted-foreground" href={skill.link} />
+										</Button>
+									</Tooltip.Trigger>
+									<Tooltip.Content>
+										<p>View language breakdown</p>
+									</Tooltip.Content>
+								</Tooltip.Root>
+							{/if}
+						</div>
+						<Badge variant="default" class="h-5">{skill.level}</Badge>
 					</div>
 				{/each}
 			</Card.Content>
 		</Card.Root>
+
 		<!-- Development -->
 		<Card.Root>
 			<Card.Header>
