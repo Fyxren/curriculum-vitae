@@ -12,16 +12,12 @@
 				href={link.link}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="p-2 duration-200 rounded-lg hover:bg-muted hover:rotate-6"
+				class="p-2 duration-200 rounded-lg hover:rotate-6 hover:bg-muted"
 			>
-				<img
-					src={`/icons/${link.icon}.svg`}
-					alt={link.name}
-					class="object-contain w-10"
-				/>
+				<img src={`/icons/${link.icon}.svg`} alt={link.name} class="object-contain w-10" />
 			</a>
 		{/each}
 	</div>
 	<p class="text-muted-foreground">This is my resume. Rather go to my personal page?</p>
-	<Button href="https://fyxren.com" class="" variant="outline">Go to Fyxren.com</Button>
+	<Button href="https://fyxren.com" target="_blank" variant="outline">Go to Fyxren.com</Button>
 </div>
