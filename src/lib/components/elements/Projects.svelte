@@ -39,7 +39,7 @@
 							>
 								{link.label}
 								{#if link.label === 'GitHub'}
-									<img src="/icons/github.svg" alt="github icon" class="w-4 h-4" />
+									<img src="/icons/github.svg" alt="github icon" class="w-4 h-4 dark:invert-0 invert" />
 								{:else}
 									<ExternalLink class="w-4 h-4" />
 								{/if}

@@ -14,7 +14,7 @@
 				rel="noopener noreferrer"
 				class="p-2 duration-200 rounded-lg hover:rotate-6 hover:bg-muted"
 			>
-				<img src={`/icons/${link.icon}.svg`} alt={link.name} class="object-contain w-10" />
+				<img src={`/icons/${link.icon}.svg`} alt={link.name} class="object-contain w-10 dark:invert-0 invert" />
 			</a>
 		{/each}
 	</div>
