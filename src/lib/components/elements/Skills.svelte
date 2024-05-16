@@ -8,7 +8,7 @@
 	import { ExternalLink, Info } from 'lucide-svelte';
 </script>
 
-<div class="px-5 xl:px-40">
+<div id="skills" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">Skills & Tools</h2>
 	<div class="grid grid-cols-3 gap-10 mt-4">
 		<!-- Languages -->

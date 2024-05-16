@@ -6,7 +6,7 @@
 	import { Construction, ExternalLink } from 'lucide-svelte';
 </script>
 
-<div class="px-5 xl:px-40">
+<div id="projects" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">Projects</h2>
 	<div class="grid grid-cols-2 gap-10 mt-4">
 		{#each projects as project}

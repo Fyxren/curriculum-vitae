@@ -1,5 +1,13 @@
 <script lang="ts">
 	import ThemeSwitcher from '../atoms/ThemeSwitcher.svelte';
+	// import { scroll } from 'svelte/window';
+
+	// function scrollTo(event: any) {
+	// 	event.preventDefault();
+	// 	const id = event.target.getAttribute('href').substring(1);
+	// 	const element = document.getElementById(id);
+	// 	scroll({ top: element?.offsetTop, behavior: 'smooth' });
+	// }
 </script>
 
 <header
