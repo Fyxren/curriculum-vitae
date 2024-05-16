@@ -3,6 +3,7 @@
 	import Experience from '$lib/components/elements/Experience.svelte';
 	import Footer from '$lib/components/elements/Footer.svelte';
 	import Header from '$lib/components/elements/Header.svelte';
+	import Projects from '$lib/components/elements/Projects.svelte';
 	import Skills from '$lib/components/elements/Skills.svelte';
 </script>
 
@@ -11,5 +12,6 @@
 	<Education />
 	<Experience />
 	<Skills />
+	<Projects />
 	<Footer />
 </div>

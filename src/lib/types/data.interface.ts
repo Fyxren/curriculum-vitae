@@ -7,13 +7,13 @@ export interface Education {
 }
 
 export interface Project {
-    type: 'website' | 'bot' | 'paper' | 'startup';
     title: string;
     description: string;
+    type: 'website' | 'bot' | 'paper' | 'startup';
     stack: string[];
     image: string;
+    wip: boolean;
     links: ProjectLink[];
-
 }
 
 export interface Experience {
@@ -34,8 +34,9 @@ export interface Skills {
 export type Links = SocialLink[];
 
 interface ProjectLink {
-    title: string;
-    link: string;
+    label: string;
+    url: string;
+    link?: boolean
 }
 
 interface LanguageSkill {
