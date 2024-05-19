@@ -31,6 +31,13 @@ export interface Skills {
     software: SoftwareSkill[];
 }
 
+export interface Hobbies {
+    title: string;
+    description: string;
+    image?: string;
+    links: HobbyLink[];
+}
+
 export type Links = SocialLink[];
 
 interface ProjectLink {
@@ -62,4 +69,9 @@ interface SocialLink {
     name: string;
     link: string;
     icon: string;
+}
+
+interface HobbyLink {
+    label: string;
+    url: string;
 }
