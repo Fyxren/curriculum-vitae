@@ -6,7 +6,6 @@
 		const rect = target.getBoundingClientRect();
 		const x = event.clientX - rect.left - rect.width / 2;
 		rotation = (x / (rect.width / 2)) * 5;
-		console.log('ROTATION = ', rotation);
 	}
 
 	function handleMouseLeave(event: MouseEvent) {
