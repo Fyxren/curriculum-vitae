@@ -9,7 +9,7 @@ export default [
         start: 'Apr. 2019'
     },
     {
-        title: 'Intern',
+        title: 'Software Developer',
         company: 'Bongers/Jansen',
         link: 'https://www.bongers-jansen.nl',
         type: 'Internship',
