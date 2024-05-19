@@ -1,13 +1,5 @@
 <script lang="ts">
 	import ThemeSwitcher from '../atoms/ThemeSwitcher.svelte';
-	// import { scroll } from 'svelte/window';
-
-	// function scrollTo(event: any) {
-	// 	event.preventDefault();
-	// 	const id = event.target.getAttribute('href').substring(1);
-	// 	const element = document.getElementById(id);
-	// 	scroll({ top: element?.offsetTop, behavior: 'smooth' });
-	// }
 </script>
 
 <header
@@ -17,7 +9,7 @@
 		<div class="hidden mr-4 md:flex">
 			<a href="/" class="flex items-center mr-6 space-x-2">
 				<img
-					src="https://placehold.co/100"
+					src="/logo.svg"
 					alt="logo"
 					class="object-contain h-6 invert dark:invert-0"
 				/>
