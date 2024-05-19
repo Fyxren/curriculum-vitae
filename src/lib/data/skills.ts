@@ -16,7 +16,8 @@ export default {
         {
             name: 'German',
             countryCode: 'de',
-            level: 'B1'
+            level: 'B1',
+            note: 'Level required to pass my German exam in high school.'
         }
     ],
     dev: [

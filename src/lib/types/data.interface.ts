@@ -51,6 +51,7 @@ interface LanguageSkill {
     countryCode: string;
     level: string;
     link?: string;
+    note?: string;
 }
 
 interface DevSkill {

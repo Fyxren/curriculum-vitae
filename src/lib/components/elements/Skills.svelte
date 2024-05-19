@@ -45,6 +45,18 @@
 									</Tooltip.Content>
 								</Tooltip.Root>
 							{/if}
+							{#if skill.note}
+								<Tooltip.Root>
+									<Tooltip.Trigger asChild let:builder>
+										<Button builders={[builder]} variant="ghost" class="-ml-2 scale-75">
+											<Info class="text-muted-foreground" />
+										</Button>
+									</Tooltip.Trigger>
+									<Tooltip.Content>
+										<p>{skill.note}</p>
+									</Tooltip.Content>
+								</Tooltip.Root>
+							{/if}
 						</div>
 						<Badge variant="default" class="h-5">{skill.level}</Badge>
 					</div>
