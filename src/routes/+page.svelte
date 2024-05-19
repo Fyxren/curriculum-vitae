@@ -27,7 +27,7 @@
 			>
 		</Card.Header>
 		<Card.Content class="grid items-center grid-cols-3 gap-4">
-			<Input type="password" placeholder="code" class="col-span-2" />
+			<Input type="password" placeholder="code" class="col-span-2" name="PinCode" />
 			<Button type="submit" class="">Login</Button>
 		</Card.Content>
 		<Card.Footer>

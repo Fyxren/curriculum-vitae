@@ -1,13 +1,13 @@
 import { redirect } from '@sveltejs/kit';
 import type { Actions } from './$types';
-import code from '$lib/util/code';
+import { CODE } from '$env/static/private';
 
 export const actions = {
     default: async ({ cookies, request }) => {
-        if ((await request.formData()).get('PinCode') !== code) {
+        if ((await request.formData()).get('PinCode') !== CODE) {
             return { error: true };
         } else {
-            cookies.set('sessionid', code, { path: '/' });
+            cookies.set('sessionid', CODE, { path: '/' });
             throw redirect(303, '/me');
         }
     }
