@@ -1,12 +1,17 @@
+<script context="module">
+	import * as m from "$paraglide/messages"
+</script>
+
 <script>
+	// import * as m from '$paraglide/messages';
 	import education from '$lib/data/education';
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '../ui/badge';
 </script>
 
 <div id="education" class="px-5 xl:px-40">
-	<h2 class="text-3xl font-light">Education</h2>
-	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-2">
+	<h2 class="text-3xl font-light">{m.education_title()}</h2>
+	<div class="grid gap-4 mt-4 xl:grid-cols-2 xl:gap-10">
 		{#each education as edu}
 			<Card.Root>
 				<Card.Header>

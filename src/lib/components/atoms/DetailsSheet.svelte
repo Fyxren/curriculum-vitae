@@ -12,7 +12,6 @@
 	import links from '$lib/data/links';
 
 	export let details: PersonalDetails;
-	$: console.log(details);
 
 	function copyEmail(mail: string) {
 		navigator.clipboard

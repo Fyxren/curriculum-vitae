@@ -1,4 +1,5 @@
 <script>
+	import * as m from '$paraglide/messages';
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '../ui/button';
@@ -7,7 +8,7 @@
 </script>
 
 <div id="projects" class="px-5 xl:px-40">
-	<h2 class="text-3xl font-light">Projects</h2>
+	<h2 class="text-3xl font-light">{m.projects_title()}</h2>
 	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-2">
 		{#each projects as project}
 			<Card.Root>

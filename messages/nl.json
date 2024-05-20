@@ -1,0 +1,19 @@
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "education_title": "Onderwijs",
+    "experience_title": "Ervaring",
+    "footer_text": "Dit is mijn CV. Liever naar mijn persoonlijke pagina?",
+    "footer_button": "Ga naar {website}",
+    "hobbies_title": "Hobby's",
+    "projects_title": "Projecten",
+    "skills_title": "Vaardigheden & Hulpmiddelen",
+    "skills_langs_title": "Talen",
+    "skills_langs_desc": "Welke talen spreek ik?",
+    "skills_langs_breakdown": "Bekijk de taalspecificatie",
+    "skills_dev_title": "Development",
+    "skills_dev_desc": "De belangrijkste talen, frameworks en libraries die ik gebruik.",
+    "skills_dev_beginner": "Beginner",
+    "skills_software_title": "Software",
+    "skills_software_desc": "Software die ik gebruik voor allerlei dingen.",
+    "skills_software_decent": "Redelijk"
+}

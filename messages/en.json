@@ -1,0 +1,19 @@
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "education_title": "Education",
+    "experience_title": "Experience",
+    "footer_text": "This is my resume. Rather go to my personal page?",
+    "footer_button": "Go to {website}",
+    "hobbies_title": "Hobbies",
+    "projects_title": "Projects",
+    "skills_title": "Skills & Tools",
+    "skills_langs_title": "Languages",
+    "skills_langs_desc": "What languages do I speak?",
+    "skills_langs_breakdown": "View language breakdown",
+    "skills_dev_title": "Development",
+    "skills_dev_desc": "The main languages, frameworks & libraries I use.",
+    "skills_dev_beginner": "Beginner",
+    "skills_software_title": "Software",
+    "skills_software_desc": "Software I use for all kinds of fun.",
+    "skills_software_decent": "Decent"
+}

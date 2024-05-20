@@ -1,4 +1,5 @@
 <script>
+	import * as m from '$paraglide/messages';
 	import skills from '$lib/data/skills';
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
@@ -9,13 +10,13 @@
 </script>
 
 <div id="skills" class="px-5 xl:px-40">
-	<h2 class="text-3xl font-light">Skills & Tools</h2>
+	<h2 class="text-3xl font-light">{m.skills_title()}</h2>
 	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-3">
 		<!-- Languages -->
 		<Card.Root>
 			<Card.Header>
-				<Card.Title>Languages</Card.Title>
-				<Card.Description>What languages do I speak?</Card.Description>
+				<Card.Title>{m.skills_langs_title()}</Card.Title>
+				<Card.Description>{m.skills_langs_desc()}</Card.Description>
 			</Card.Header>
 			<Card.Content class="space-y-2">
 				{#each skills.languages as skill}
@@ -41,7 +42,7 @@
 										</Button>
 									</Tooltip.Trigger>
 									<Tooltip.Content>
-										<p>View language breakdown</p>
+										<p>{m.skills_langs_breakdown()}</p>
 									</Tooltip.Content>
 								</Tooltip.Root>
 							{/if}
@@ -67,8 +68,8 @@
 		<!-- Development -->
 		<Card.Root>
 			<Card.Header>
-				<Card.Title>Development</Card.Title>
-				<Card.Description>The main languages, frameworks & libraries I use.</Card.Description>
+				<Card.Title>{m.skills_dev_title()}</Card.Title>
+				<Card.Description>{m.skills_dev_desc()}</Card.Description>
 			</Card.Header>
 			<Card.Content class="grid grid-cols-6 gap-2">
 				{#each skills.dev as dev}
@@ -89,7 +90,7 @@
 							<div class="flex justify-between space-x-4">
 								<h3>{dev.name}</h3>
 								{#if dev.beginner}
-									<Badge>Beginner</Badge>
+									<Badge>{m.skills_dev_beginner()}</Badge>
 								{/if}
 							</div>
 						</HoverCard.Content>
@@ -101,8 +102,8 @@
 		<!-- Software -->
 		<Card.Root>
 			<Card.Header>
-				<Card.Title>Software</Card.Title>
-				<Card.Description>Software I use for all kinds of fun.</Card.Description>
+				<Card.Title>{m.skills_software_title()}</Card.Title>
+				<Card.Description>{m.skills_software_desc()}</Card.Description>
 			</Card.Header>
 			<Card.Content class="grid grid-cols-6 gap-2">
 				{#each skills.software as software}
@@ -123,7 +124,7 @@
 							<div class="flex justify-between space-x-4">
 								<h3>{software.name}</h3>
 								{#if software.beginner}
-									<Badge>Decent</Badge>
+									<Badge>{m.skills_software_decent()}</Badge>
 								{/if}
 							</div>
 						</HoverCard.Content>
