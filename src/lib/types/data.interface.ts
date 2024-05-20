@@ -40,6 +40,19 @@ export interface Hobbies {
 
 export type Links = SocialLink[];
 
+export interface PersonalDetails {
+    firstName: string;
+    lastName: string;
+    birthday: string;
+    address: string;
+    city: string;
+    zip: string;
+    country: string;
+    email: string;
+    schoolMail: string;
+    phone: string;
+}
+
 interface ProjectLink {
     label: string;
     url: string;
