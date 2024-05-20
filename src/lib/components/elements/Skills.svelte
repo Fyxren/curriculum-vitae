@@ -10,7 +10,7 @@
 
 <div id="skills" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">Skills & Tools</h2>
-	<div class="grid grid-cols-3 gap-10 mt-4">
+	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-3">
 		<!-- Languages -->
 		<Card.Root>
 			<Card.Header>
@@ -70,7 +70,7 @@
 				<Card.Title>Development</Card.Title>
 				<Card.Description>The main languages, frameworks & libraries I use.</Card.Description>
 			</Card.Header>
-			<Card.Content class="flex flex-wrap justify-between gap-y-2">
+			<Card.Content class="grid grid-cols-6 gap-2">
 				{#each skills.dev as dev}
 					<HoverCard.Root>
 						<HoverCard.Trigger>
@@ -104,7 +104,7 @@
 				<Card.Title>Software</Card.Title>
 				<Card.Description>Software I use for all kinds of fun.</Card.Description>
 			</Card.Header>
-			<Card.Content class="flex flex-wrap justify-between gap-y-2">
+			<Card.Content class="grid grid-cols-6 gap-2">
 				{#each skills.software as software}
 					<HoverCard.Root>
 						<HoverCard.Trigger>

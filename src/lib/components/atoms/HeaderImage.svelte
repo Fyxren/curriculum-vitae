@@ -8,13 +8,13 @@
 		rotation = (x / (rect.width / 2)) * 5;
 	}
 
-	function handleMouseLeave(event: MouseEvent) {
+	function handleMouseLeave() {
 		rotation = 0;
 	}
 </script>
 
 <div
-	class="w-64 h-64 image-hover"
+	class="w-40 h-40 lg:w-64 lg:h-64 image-hover"
 	on:mousemove={handleMouseMove}
 	on:mouseleave={handleMouseLeave}
 	role="none"
@@ -22,7 +22,7 @@
 	<img
 		src="/cv_img.png"
 		alt="My face"
-		class="rounded-full opacity-50 contrast-125 grayscale hover:scale-110 hover:opacity-100 hover:contrast-100 hover:grayscale-0"
+		class="rounded-full lg:opacity-50 lg:contrast-125 lg:grayscale hover:scale-110 hover:opacity-100 hover:contrast-100 hover:grayscale-0"
 		style="transform: rotate({rotation}deg); transition: transform 0.2s linear;"
 	/>
 </div>

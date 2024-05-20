@@ -6,7 +6,7 @@
 
 <div id="experience" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">Experience</h2>
-	<div class="grid grid-cols-2 gap-10 mt-4">
+	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-2">
 		{#each experience as ex}
 			<Card.Root>
 				<Card.Header>

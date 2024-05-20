@@ -6,7 +6,7 @@
 
 <div id="education" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">Education</h2>
-	<div class="grid grid-cols-2 gap-10 mt-4">
+	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-2">
 		{#each education as edu}
 			<Card.Root>
 				<Card.Header>

@@ -1,14 +1,15 @@
 <script>
-	import HeaderImage from "../atoms/HeaderImage.svelte";
-
+	import HeaderImage from '../atoms/HeaderImage.svelte';
 </script>
 
-<div class="flex items-center justify-between px-40 py-40">
+<div
+	class="flex flex-col-reverse items-center justify-between gap-10 px-5 py-20 text-center lg:py-40 lg:flex-row lg:gap-0 lg:px-40 lg:text-left"
+>
 	<div class="flex flex-col">
-		<h1 class="font-bold text-7xl">Ben van der Weerd</h1>
+		<h1 class="text-xl font-bold lg:text-7xl">Ben van der Weerd</h1>
 		<a
 			href="https://graafschapcollege.nl/profielen/technicus-engineering/"
-			class="mt-2 text-xl hover-link"
+			class="mt-2 text-muted-foreground hover-link lg:text-xl"
 			target="_blank">Smart Industry student @ Graafschap College</a
 		>
 	</div>

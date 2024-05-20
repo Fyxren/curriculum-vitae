@@ -75,7 +75,7 @@
 	<Sheet.Trigger asChild let:builder>
 		<Button builders={[builder]} variant="secondary">Personal Details</Button>
 	</Sheet.Trigger>
-	<Sheet.Content side="right">
+	<Sheet.Content side="right" class="overflow-y-auto">
 		<Sheet.Header>
 			<Sheet.Title>Personal Details</Sheet.Title>
 			<Sheet.Description>An overview of my personal details.</Sheet.Description>

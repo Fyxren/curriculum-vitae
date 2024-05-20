@@ -8,7 +8,7 @@
 
 <div id="hobbies" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">Hobbies</h2>
-	<div class="grid grid-cols-2 gap-10 mt-4">
+	<div class="grid gap-4 mt-4 xl:gap-10 lg:grid-cols-2">
 		{#each hobbies as hobby}
 			<Card.Root>
 				<Card.Header class='flex-row gap-8'>

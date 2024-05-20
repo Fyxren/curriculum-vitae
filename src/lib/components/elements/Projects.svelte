@@ -8,7 +8,7 @@
 
 <div id="projects" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">Projects</h2>
-	<div class="grid grid-cols-2 gap-10 mt-4">
+	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-2">
 		{#each projects as project}
 			<Card.Root>
 				<Card.Header class="flex-row gap-4">
@@ -21,7 +21,7 @@
 							{#if project.wip}
 								<Badge variant="secondary" class="gap-1 scale-90">
 									<Construction class="w-4 h-4" />
-									Work in progress
+									In progress
 								</Badge>
 							{/if}
 						</Card.Title>
