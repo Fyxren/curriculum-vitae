@@ -1,12 +1,15 @@
 <script>
-	import experience from '$lib/data/experience';
+	import * as m from '$paraglide/messages';
+	import { getExperience } from '$lib/data/experience';
 	import * as Card from '$lib/components/ui/card';
-	import { Badge } from "$lib/components/ui/badge";
+	import { Badge } from '$lib/components/ui/badge';
+
+	const experience = getExperience(m);
 </script>
 
 <div id="experience" class="px-5 xl:px-40">
-	<h2 class="text-3xl font-light">Experience</h2>
-	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-2">
+	<h2 class="text-3xl font-light">{m.experience_title()}</h2>
+	<div class="mt-4 grid gap-4 xl:grid-cols-2 xl:gap-10">
 		{#each experience as ex}
 			<Card.Root>
 				<Card.Header>
