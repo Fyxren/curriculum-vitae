@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
+	import LanguageSwitcher from '../atoms/LanguageSwitcher.svelte';
 	import ThemeSwitcher from '../atoms/ThemeSwitcher.svelte';
 </script>
 
@@ -31,9 +32,8 @@
 			</nav>
 		</div>
 		<div class="flex items-center justify-end flex-1 space-x-2">
-			<div class="flex items-center">
-				<ThemeSwitcher />
-			</div>
+			<LanguageSwitcher />
+			<ThemeSwitcher />
 		</div>
 	</div>
 </header>

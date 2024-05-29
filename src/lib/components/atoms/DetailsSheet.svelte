@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages'
 	import * as Sheet from '$lib/components/ui/sheet';
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
@@ -72,33 +73,33 @@
 
 <Sheet.Root>
 	<Sheet.Trigger asChild let:builder>
-		<Button builders={[builder]} variant="secondary">Personal Details</Button>
+		<Button builders={[builder]} variant="secondary">{m.sheet_button()}</Button>
 	</Sheet.Trigger>
 	<Sheet.Content side="right" class="overflow-y-auto">
 		<Sheet.Header>
-			<Sheet.Title>Personal Details</Sheet.Title>
-			<Sheet.Description>An overview of my personal details.</Sheet.Description>
+			<Sheet.Title>{m.details_title()}</Sheet.Title>
+			<Sheet.Description>{m.details_desc()}</Sheet.Description>
 		</Sheet.Header>
 		<div class="grid gap-4 py-4">
 			<!-- Name -->
 			<div class="flex gap-4">
 				<div>
-					<Label for="firstName" class="text-right">First Name</Label>
+					<Label for="firstName" class="text-right">{m.details_firstName()}</Label>
 					<Input id="firstName" value={details.firstName} class="col-span-3" disabled />
 				</div>
 				<div>
-					<Label for="lastName" class="text-right">Last Name</Label>
+					<Label for="lastName" class="text-right">{m.details_lastName()}</Label>
 					<Input id="lastName" value={details.lastName} class="col-span-3" disabled />
 				</div>
 			</div>
 
 			<div class="flex gap-4">
 				<div>
-					<Label for="birthday" class="text-right">Birthday</Label>
+					<Label for="birthday" class="text-right">{m.details_birth()}</Label>
 					<Input id="birthday" value={details.birthday} class="col-span-3" disabled />
 				</div>
 				<div>
-					<Label for="age" class="text-right">Age</Label>
+					<Label for="age" class="text-right">{m.details_age()}</Label>
 					<Input id="age" value={age} class="col-span-3" disabled />
 				</div>
 			</div>
@@ -108,22 +109,22 @@
 			<!-- Address -->
 			<div class="flex gap-4">
 				<div>
-					<Label for="Address" class="text-right">Address</Label>
+					<Label for="Address" class="text-right">{m.details_address()}</Label>
 					<Input id="Address" value={details.address} class="col-span-3" disabled />
 				</div>
 				<div>
-					<Label for="zip" class="text-right">ZIP</Label>
+					<Label for="zip" class="text-right">{m.details_zip()}</Label>
 					<Input id="zip" value={details.zip} class="col-span-3" disabled />
 				</div>
 			</div>
 
 			<div class="flex gap-4">
 				<div>
-					<Label for="city" class="text-right">City</Label>
+					<Label for="city" class="text-right">{m.details_city()}</Label>
 					<Input id="city" value={details.city} class="col-span-3" disabled />
 				</div>
 				<div>
-					<Label for="country" class="text-right">Country</Label>
+					<Label for="country" class="text-right">{m.details_country()}</Label>
 					<Input id="country" value={details.country} class="col-span-3" disabled />
 				</div>
 			</div>
@@ -131,7 +132,7 @@
 			<Separator />
 
 			<div>
-				<Label for="schoolMail" class="text-right">School Email</Label>
+				<Label for="schoolMail" class="text-right">{m.details_schoolEmail()}</Label>
 				<div class="flex items-center gap-2">
 					<Input id="email" value={details.schoolMail} class="col-span-3" disabled />
 					<DropdownMenu.Root>
@@ -146,19 +147,19 @@
 								on:click={() => copyEmail(details.schoolMail)}
 							>
 								<Copy class="w-4 h-4 mr-2" />
-								<span>Copy email</span>
+								<span>{m.details_copyEmail()}</span>
 							</DropdownMenu.Item>
 							<DropdownMenu.Separator />
 							<DropdownMenu.Item class="cursor-pointer" href="mailto:{details.schoolMail}">
 								<Send class="w-4 h-4 mr-2" />
-								<span>Send email</span>
+								<span>{m.details_sendEmail()}</span>
 							</DropdownMenu.Item>
 						</DropdownMenu.Content>
 					</DropdownMenu.Root>
 				</div>
 			</div>
 			<div>
-				<Label for="email" class="text-right">Private Email</Label>
+				<Label for="email" class="text-right">{m.details_privateEmail()}</Label>
 				<div class="flex items-center gap-2">
 					<Input id="email" value={details.email} class="col-span-3" disabled />
 					<DropdownMenu.Root>
@@ -170,19 +171,19 @@
 						<DropdownMenu.Content align="end">
 							<DropdownMenu.Item class="cursor-pointer" on:click={() => copyEmail(details.email)}>
 								<Copy class="w-4 h-4 mr-2" />
-								<span>Copy email</span>
+								<span>{m.details_copyEmail()}</span>
 							</DropdownMenu.Item>
 							<DropdownMenu.Separator />
 							<DropdownMenu.Item class="cursor-pointer" href="mailto:{details.email}">
 								<Send class="w-4 h-4 mr-2" />
-								<span>Send email</span>
+								<span>{m.details_sendEmail()}</span>
 							</DropdownMenu.Item>
 						</DropdownMenu.Content>
 					</DropdownMenu.Root>
 				</div>
 			</div>
 			<div>
-				<Label for="phone" class="text-right">Phone</Label>
+				<Label for="phone" class="text-right">{m.details_phone()}</Label>
 				<div class="flex items-center gap-2">
 					<Input id="phone" value={details.phone} class="col-span-3" disabled />
 					<DropdownMenu.Root>
@@ -194,12 +195,12 @@
 						<DropdownMenu.Content align="end">
 							<DropdownMenu.Item class="cursor-pointer" on:click={() => copyPhone(details.phone)}>
 								<Copy class="w-4 h-4 mr-2" />
-								<span>Copy phone number</span>
+								<span>{m.details_copyPhone()}</span>
 							</DropdownMenu.Item>
 							<DropdownMenu.Separator />
 							<DropdownMenu.Item class="cursor-pointer" on:click={saveContact}>
 								<Save class="w-4 h-4 mr-2" />
-								<span>Save contact</span>
+								<span>{m.details_saveContact()}</span>
 							</DropdownMenu.Item>
 						</DropdownMenu.Content>
 					</DropdownMenu.Root>
