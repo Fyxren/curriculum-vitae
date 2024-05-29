@@ -13,7 +13,7 @@
 
 <div id="skills" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">{m.skills_title()}</h2>
-	<div class="grid gap-4 mt-4 xl:grid-cols-3 xl:gap-10">
+	<div class="mt-4 grid gap-4 xl:grid-cols-3 xl:gap-10">
 		<!-- Languages -->
 		<Card.Root>
 			<Card.Header>
@@ -27,7 +27,7 @@
 							<img
 								src={`https://flagcdn.com/${skill.countryCode}.svg`}
 								alt={skill.name}
-								class="object-contain w-12 rounded-sm"
+								class="w-12 rounded-sm object-contain"
 							/>
 							{skill.name}
 							{#if skill.link}
@@ -81,10 +81,10 @@
 								<img
 									src={`https://skillicons.dev/icons?i=${dev.icon}`}
 									alt={dev.name}
-									class="object-contain w-12"
+									class="w-12 object-contain"
 								/>
 								{#if dev.beginner}
-									<Info class="absolute w-4 h-4 opacity-75 -right-2 -top-2" />
+									<Info class="absolute -right-2 -top-2 h-4 w-4 opacity-75" />
 								{/if}
 							</div>
 						</HoverCard.Trigger>
@@ -115,10 +115,10 @@
 								<img
 									src={`https://skillicons.dev/icons?i=${software.icon}`}
 									alt={software.name}
-									class="object-contain w-12"
+									class="w-12 object-contain"
 								/>
 								{#if software.beginner}
-									<Info class="absolute w-4 h-4 opacity-75 -right-2 -top-2" />
+									<Info class="absolute -right-2 -top-2 h-4 w-4 opacity-75" />
 								{/if}
 							</div>
 						</HoverCard.Trigger>

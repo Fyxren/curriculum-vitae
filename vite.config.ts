@@ -7,7 +7,7 @@ export default defineConfig({
 		sveltekit(),
 		paraglide({
 			project: './project.inlang',
-			outdir: './src/paraglide',
+			outdir: './src/paraglide'
 		})
 	]
 });

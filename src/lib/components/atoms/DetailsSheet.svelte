@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages'
+	import * as m from '$paraglide/messages';
 	import * as Sheet from '$lib/components/ui/sheet';
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
@@ -138,7 +138,7 @@
 					<DropdownMenu.Root>
 						<DropdownMenu.Trigger>
 							<Button variant="secondary">
-								<Ellipsis class="w-4 h-4" />
+								<Ellipsis class="h-4 w-4" />
 							</Button>
 						</DropdownMenu.Trigger>
 						<DropdownMenu.Content align="end">
@@ -146,12 +146,12 @@
 								class="cursor-pointer"
 								on:click={() => copyEmail(details.schoolMail)}
 							>
-								<Copy class="w-4 h-4 mr-2" />
+								<Copy class="mr-2 h-4 w-4" />
 								<span>{m.details_copyEmail()}</span>
 							</DropdownMenu.Item>
 							<DropdownMenu.Separator />
 							<DropdownMenu.Item class="cursor-pointer" href="mailto:{details.schoolMail}">
-								<Send class="w-4 h-4 mr-2" />
+								<Send class="mr-2 h-4 w-4" />
 								<span>{m.details_sendEmail()}</span>
 							</DropdownMenu.Item>
 						</DropdownMenu.Content>
@@ -165,17 +165,17 @@
 					<DropdownMenu.Root>
 						<DropdownMenu.Trigger>
 							<Button variant="secondary">
-								<Ellipsis class="w-4 h-4" />
+								<Ellipsis class="h-4 w-4" />
 							</Button>
 						</DropdownMenu.Trigger>
 						<DropdownMenu.Content align="end">
 							<DropdownMenu.Item class="cursor-pointer" on:click={() => copyEmail(details.email)}>
-								<Copy class="w-4 h-4 mr-2" />
+								<Copy class="mr-2 h-4 w-4" />
 								<span>{m.details_copyEmail()}</span>
 							</DropdownMenu.Item>
 							<DropdownMenu.Separator />
 							<DropdownMenu.Item class="cursor-pointer" href="mailto:{details.email}">
-								<Send class="w-4 h-4 mr-2" />
+								<Send class="mr-2 h-4 w-4" />
 								<span>{m.details_sendEmail()}</span>
 							</DropdownMenu.Item>
 						</DropdownMenu.Content>
@@ -189,17 +189,17 @@
 					<DropdownMenu.Root>
 						<DropdownMenu.Trigger>
 							<Button variant="secondary">
-								<Ellipsis class="w-4 h-4" />
+								<Ellipsis class="h-4 w-4" />
 							</Button>
 						</DropdownMenu.Trigger>
 						<DropdownMenu.Content align="end">
 							<DropdownMenu.Item class="cursor-pointer" on:click={() => copyPhone(details.phone)}>
-								<Copy class="w-4 h-4 mr-2" />
+								<Copy class="mr-2 h-4 w-4" />
 								<span>{m.details_copyPhone()}</span>
 							</DropdownMenu.Item>
 							<DropdownMenu.Separator />
 							<DropdownMenu.Item class="cursor-pointer" on:click={saveContact}>
-								<Save class="w-4 h-4 mr-2" />
+								<Save class="mr-2 h-4 w-4" />
 								<span>{m.details_saveContact()}</span>
 							</DropdownMenu.Item>
 						</DropdownMenu.Content>

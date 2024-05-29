@@ -16,7 +16,7 @@
 			<img
 				src="https://flagcdn.com/{languageTag() === 'en' ? 'gb' : languageTag()}.svg"
 				alt="flag"
-				class="w-6 h-6"
+				class="h-6 w-6"
 			/>
 		</Button>
 	</DropdownMenu.Trigger>
@@ -26,7 +26,7 @@
 				<img
 					src="https://flagcdn.com/{lang === 'en' ? 'gb' : lang}.svg"
 					alt="flag"
-					class="w-4 h-4 mr-2"
+					class="mr-2 h-4 w-4"
 				/>
 				<span>{languages[lang]}</span>
 			</DropdownMenu.Item>

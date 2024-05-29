@@ -19,14 +19,14 @@
 	{/if}
 </form> -->
 
-<form method="POST" class="flex items-center justify-center h-screen" use:enhance>
+<form method="POST" class="flex h-screen items-center justify-center" use:enhance>
 	<Card.Root>
 		<Card.Header>
 			<Card.Title>Login - Ben's Curriculum Vitae</Card.Title>
 			<Card.Description>Please enter the login code to access my curriculum vitae.</Card.Description
 			>
 		</Card.Header>
-		<Card.Content class="grid items-center grid-cols-3 gap-4">
+		<Card.Content class="grid grid-cols-3 items-center gap-4">
 			<Input type="password" placeholder="code" class="col-span-2" name="PinCode" />
 			<Button type="submit" class="">Login</Button>
 		</Card.Content>

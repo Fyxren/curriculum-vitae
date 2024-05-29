@@ -1,22 +1,28 @@
-import type { Experience } from "$lib/types/data.interface";
+import type { Experience } from '$lib/types/data.interface';
 
-export function getExperience(m: any) {
+type Inlang = {
+	experience_obelink_title: () => string;
+	experience_bongersjansen_title: () => string;
+	experience_type_partTime: () => string;
+	experience_type_internship: () => string;
+};
 
-    return [
-        {
-            title: m.experience_obelink_title(),
-            company: 'Obelink Vrijetijdsmarkt',
-            link: 'https://www.obelink.nl',
-            type: m.experience_type_partTime(),
-            start: 'Apr. 2019'
-        },
-        {
-            title: m.experience_bongersjansen_title(),
-            company: 'Bongers/Jansen',
-            link: 'https://www.bongers-jansen.nl',
-            type: m.experience_type_internship(),
-            start: 'Nov. 2023',
-            end: 'Jan. 2024'
-        }
-    ] as Experience[];
+export function getExperience(m: Inlang) {
+	return [
+		{
+			title: m.experience_obelink_title(),
+			company: 'Obelink Vrijetijdsmarkt',
+			link: 'https://www.obelink.nl',
+			type: m.experience_type_partTime(),
+			start: 'Apr. 2019'
+		},
+		{
+			title: m.experience_bongersjansen_title(),
+			company: 'Bongers/Jansen',
+			link: 'https://www.bongers-jansen.nl',
+			type: m.experience_type_internship(),
+			start: 'Nov. 2023',
+			end: 'Jan. 2024'
+		}
+	] as Experience[];
 }

@@ -7,18 +7,18 @@
 
 <div class="flex flex-col items-center space-y-8">
 	<Separator />
-	<div class="flex justify-center w-full gap-12">
+	<div class="flex w-full justify-center gap-12">
 		{#each links as link}
 			<a
 				href={link.link}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="p-2 duration-200 rounded-lg hover:rotate-6 hover:bg-muted"
+				class="rounded-lg p-2 duration-200 hover:rotate-6 hover:bg-muted"
 			>
 				<img
 					src={`/icons/${link.icon}.svg`}
 					alt={link.name}
-					class="object-contain w-8 invert dark:invert-0 xl:w-10"
+					class="w-8 object-contain invert dark:invert-0 xl:w-10"
 				/>
 			</a>
 		{/each}
