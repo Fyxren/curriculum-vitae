@@ -3,13 +3,15 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '../ui/button';
-	import projects from '$lib/data/projects';
+	import { getProjects } from '$lib/data/projects';
 	import { Construction, ExternalLink } from 'lucide-svelte';
+
+	const projects = getProjects(m);
 </script>
 
 <div id="projects" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">{m.projects_title()}</h2>
-	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-2">
+	<div class="grid gap-4 mt-4 xl:grid-cols-2 xl:gap-10">
 		{#each projects as project}
 			<Card.Root>
 				<Card.Header class="flex-row gap-4">
@@ -40,7 +42,11 @@
 							>
 								{link.label}
 								{#if link.label === 'GitHub'}
-									<img src="/icons/github.svg" alt="github icon" class="w-4 h-4 dark:invert-0 invert" />
+									<img
+										src="/icons/github.svg"
+										alt="github icon"
+										class="w-4 h-4 invert dark:invert-0"
+									/>
 								{:else}
 									<ExternalLink class="w-4 h-4" />
 								{/if}

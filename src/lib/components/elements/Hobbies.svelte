@@ -2,8 +2,10 @@
 	import * as m from '$paraglide/messages';
 	import * as Card from '$lib/components/ui/card';
 	import { Button } from '../ui/button';
-	import hobbies from '$lib/data/hobbies';
+	import { getHobbies } from '$lib/data/hobbies';
 	import { ExternalLink } from 'lucide-svelte';
+	
+	const hobbies = getHobbies(m);
 </script>
 
 <div id="hobbies" class="px-5 xl:px-40">

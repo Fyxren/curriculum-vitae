@@ -1,17 +1,19 @@
 <script>
 	import * as m from '$paraglide/messages';
-	import skills from '$lib/data/skills';
+	import { getSkills } from '$lib/data/skills';
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
 	import * as HoverCard from '$lib/components/ui/hover-card';
 	import * as Tooltip from '$lib/components/ui/tooltip';
 	import { Button } from '$lib/components/ui/button';
 	import { ExternalLink, Info } from 'lucide-svelte';
+
+	const skills = getSkills(m);
 </script>
 
 <div id="skills" class="px-5 xl:px-40">
 	<h2 class="text-3xl font-light">{m.skills_title()}</h2>
-	<div class="grid gap-4 mt-4 xl:gap-10 xl:grid-cols-3">
+	<div class="grid gap-4 mt-4 xl:grid-cols-3 xl:gap-10">
 		<!-- Languages -->
 		<Card.Root>
 			<Card.Header>

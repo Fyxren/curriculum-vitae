@@ -1,12 +1,14 @@
-<script context="module">
+<!-- <script context="module">
 	import * as m from "$paraglide/messages"
-</script>
+</script> -->
 
 <script>
-	// import * as m from '$paraglide/messages';
-	import education from '$lib/data/education';
+	import * as m from '$paraglide/messages';
+	import { getEducation } from '$lib/data/education';
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '../ui/badge';
+
+	const education = getEducation(m);
 </script>
 
 <div id="education" class="px-5 xl:px-40">

@@ -1,8 +1,10 @@
 <script>
 	import * as m from '$paraglide/messages';
-	import experience from '$lib/data/experience';
+	import { getExperience } from '$lib/data/experience';
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
+
+	const experience = getExperience(m);
 </script>
 
 <div id="experience" class="px-5 xl:px-40">
