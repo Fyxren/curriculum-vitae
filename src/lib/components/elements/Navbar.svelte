@@ -20,8 +20,8 @@
 				<a href="#experience" class="transition-colors text-foreground/60 hover:text-foreground/80"
 					>{m.experience_title()}</a
 				>
-				<aF href="#skills" class="transition-colors text-foreground/60 hover:text-foreground/80"
-					>{m.skills_title()}</aF
+				<a href="#skills" class="transition-colors text-foreground/60 hover:text-foreground/80"
+					>{m.skills_title()}</a
 				>
 				<a href="#projects" class="transition-colors text-foreground/60 hover:text-foreground/80"
 					>{m.projects_title()}</a
