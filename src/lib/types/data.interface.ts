@@ -38,6 +38,18 @@ export interface Hobbies {
 	links: HobbyLink[];
 }
 
+export interface Certificates {
+	title: string;
+	organization: {
+		name: string;
+		image: string;
+	};
+	granted: string;
+	expiration?: string;
+	link: string;
+	note?: string;
+}
+
 export type Links = SocialLink[];
 
 export interface PersonalDetails {

@@ -54,5 +54,7 @@
 	"skills_langs_native": "Native",
 	"skills_langs_en": "English",
 	"skills_langs_de": "German",
-	"skills_langs_de_note": "Level required to pass my German exam in high school."
+	"skills_langs_de_note": "Level required to pass my German exam in high school.",
+	"certs_title": "Certificates",
+	"certs_view": "View"
 }
