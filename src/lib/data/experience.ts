@@ -14,15 +14,15 @@ export function getExperience(m: Inlang) {
 			company: 'Obelink Vrijetijdsmarkt',
 			link: 'https://www.obelink.nl',
 			type: m.experience_type_partTime(),
-			start: 'Apr. 2019'
+			start: '2019-04-01'
 		},
 		{
 			title: m.experience_bongersjansen_title(),
 			company: 'Bongers/Jansen',
 			link: 'https://www.bongers-jansen.nl',
 			type: m.experience_type_internship(),
-			start: 'Nov. 2023',
-			end: 'Jan. 2024'
+			start: '2023-11-01',
+			end: '2024-01-01'
 		}
 	] as Experience[];
 }
