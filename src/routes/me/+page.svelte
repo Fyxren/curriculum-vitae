@@ -8,6 +8,7 @@
 	import Hobbies from '$lib/components/elements/Hobbies.svelte';
 	import Projects from '$lib/components/elements/Projects.svelte';
 	import Skills from '$lib/components/elements/Skills.svelte';
+	import Certificates from '$lib/components/elements/Certificates.svelte';
 
 	export let data: PageData;
 </script>
@@ -17,6 +18,7 @@
 		<Header />
 		<Education />
 		<Experience />
+		<Certificates />
 		<Skills />
 		<Projects />
 		<Hobbies />

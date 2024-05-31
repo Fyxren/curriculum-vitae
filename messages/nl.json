@@ -54,5 +54,7 @@
 	"skills_langs_native": "Moedertaal",
 	"skills_langs_en": "Engels",
 	"skills_langs_de": "Duits",
-	"skills_langs_de_note": "Niveau vereist om te slagen voor mijn examen Duits op de middelbare school."
+	"skills_langs_de_note": "Niveau vereist om te slagen voor mijn examen Duits op de middelbare school.",
+	"certs_title": "Certificaten",
+	"certs_view": "Bekijk"
 }

@@ -2,6 +2,15 @@ import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { cubicOut } from 'svelte/easing';
 import type { TransitionConfig } from 'svelte/transition';
+import { languageTag } from '$paraglide/runtime';
+
+export function formatDate(date: string) {
+	const parsedDate = new Date(date);
+	const monthNumber = parsedDate.getMonth();
+	const month = Intl.DateTimeFormat(languageTag(), { month: 'short' }).format(parsedDate);
+	const year = parsedDate.getFullYear();
+	return `${month}${monthNumber === 4 ? '' : '.'} ${year}`;
+}
 
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
